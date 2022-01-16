@@ -3,16 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Add node to connect Election ViewModel -->
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.android.politicalpreparedness.MainActivity">
 
-        <!-- TODO: Add Upcoming Election Recycler and Header -->
+        <TextView
+            android:id="@+id/upcoming_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upcoming_elections"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/large_text"
+            android:layout_marginStart="@dimen/mid_margin"
+            android:layout_marginTop="@dimen/mid_margin"/>
 
-        <!-- TODO: Add Saved Election Recycler and Header -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcoming_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/upcoming_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginStart="@dimen/mid_margin"
+             />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/saved_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saved_elections"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            android:textSize="@dimen/large_text"
+            android:layout_marginStart="@dimen/mid_margin"
+            android:layout_marginTop="@dimen/mid_margin"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/saved_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/saved_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginStart="@dimen/mid_margin"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

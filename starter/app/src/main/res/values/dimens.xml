@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="mid_margin">24dp</dimen>
+    <dimen name="large_text">24sp</dimen>
+    <dimen name="mid_text">18sp</dimen>
+    <dimen name="small_text">14sp</dimen>
     <dimen name="default_padding">8dp</dimen>
-
-    <!-- TODO: Add necessary dimension values -->s
-
 </resources>
