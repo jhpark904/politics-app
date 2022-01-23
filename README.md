@@ -18,10 +18,7 @@ The application supports:
  - representatives in users' location
  - navigate to social media & websites of representatives
  - search representatives by address
-
-The application does not support:
- - aesthetically pleasing frontend
-
+ - animations when representatives recycler view gets populated
 
 ## Technologies Used
 
@@ -30,4 +27,5 @@ The application does not support:
  - Glide: for loading images of representatives
  - Retrofit: for retrieving response from google civics api
  - Room: for saving elections that users are interested in to local database
+ - Motion Layout: for animations when loading representatives data
 
